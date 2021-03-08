@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/panoplanview/static/css/main.f0fe22b4.chunk.css",
-    "main.js": "/panoplanview/static/js/main.44664534.chunk.js",
-    "main.js.map": "/panoplanview/static/js/main.44664534.chunk.js.map",
+    "main.js": "/panoplanview/static/js/main.38b027f3.chunk.js",
+    "main.js.map": "/panoplanview/static/js/main.38b027f3.chunk.js.map",
     "runtime-main.js": "/panoplanview/static/js/runtime-main.0b68e4f2.js",
     "runtime-main.js.map": "/panoplanview/static/js/runtime-main.0b68e4f2.js.map",
     "static/css/2.38f08e86.chunk.css": "/panoplanview/static/css/2.38f08e86.chunk.css",
@@ -28,6 +28,6 @@
     "static/css/2.38f08e86.chunk.css",
     "static/js/2.255d7380.chunk.js",
     "static/css/main.f0fe22b4.chunk.css",
-    "static/js/main.44664534.chunk.js"
+    "static/js/main.38b027f3.chunk.js"
   ]
 }
