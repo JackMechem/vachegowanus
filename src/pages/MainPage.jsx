@@ -4,7 +4,6 @@ import ImageOne from '../files/01num.png'
 import ImageTwo from '../files/02num.png'
 import ImageThree from '../files/03num.png'
 import { useHistory } from 'react-router-dom';
-import ViewModel from './comps/modelView/ViewModel'
 
 
 const MainPage = () => {
