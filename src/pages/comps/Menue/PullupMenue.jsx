@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { TiArrowSortedUp } from 'react-icons/ti';
 import MenueContent from './MenueContent';
-
+import '../style/comps.css'
 
 
 const PullupMenue = () => {

@@ -1,7 +1,6 @@
 import ModelMenue from '../Menue/ModelMenue'
 import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
-import { MTLLoader, OBJLoader } from "three-obj-mtl-loader";
 import OrbitControls from "three-orbitcontrols";
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import Model from '../../../files/models/ModelStudioBake.glb';
@@ -32,6 +31,8 @@ const ViewModel = () => {
             mount.current.appendChild(renderer.domElement);
 
             const controls = new OrbitControls(camera, renderer.domElement);
+
+            
 
             /*let geometry = new THREE.BoxGeometry(1, 1, 1);
             let material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });

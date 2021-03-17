@@ -1,36 +1,52 @@
-import React from 'react';
-import { Pannellum } from "pannellum-react";
-import '../style/comps.css';
-import PullupMenue from '../Menue/PullupMenue';
-
+import * as THREE from 'three'
+import ReactDOM from 'react-dom'
+import React, { Suspense, useRef } from 'react'
+import { Canvas, extend, useFrame, useThree, useLoader } from 'react-three-fiber'
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import PullupMenue from '../Menue/PullupMenue'
 
 
 const ViewPano = (props) => {
 
-   
-    return(
-    <div>
+    const panoImage = props.pano;
+
+
+
+
+
+    extend({ OrbitControls })
+
+    function Controls(props) {
+        const { camera, gl } = useThree()
+        const ref = useRef()
+        useFrame(() => ref.current.update())
+        return <orbitControls ref={ref} target={[0, 0, 0]} {...props} args={[camera, gl.domElement]} />
+    }
+
+    function Dome() {
+        const texture = useLoader(THREE.TextureLoader, panoImage)
+        return (
+            <mesh>
+                <sphereBufferGeometry attach="geometry" args={[500, 60, 40]} />
+                <meshBasicMaterial attach="material" map={texture} side={THREE.BackSide} />
+            </mesh>
+        )
+    }
+
+
+    return (<div>
+        
+        <Canvas style={{height:"100vh",width:"100vw"}} camera={{ position: [0, 0, 0.1] }}>
+            <Controls enableZoom={false} enablePan={false} enableDamping dampingFactor={0.2} autoRotate rotateSpeed={-0.5} />
+            <Suspense fallback={null}>
+                <Dome />
+            </Suspense>
+        </Canvas>
         <PullupMenue/>
-        <Pannellum
-            width="100%"
-            height="100vh"
-            image={props.pano}
-            pitch={10}
-            yaw={180}
-            hfov={110}
-            minHfov={110}
-            maxHfov={110}
-            showZoomCtrl={false}
-            showFullscreenCtrl={false}
-            orientationOnByDefault={true}
-            autoRotate={6}
-            autoLoad
-            onLoad={() => {
-                console.log("panorama loaded");
-            }}
-            
-        ></Pannellum>
-        </div>
-    )
+    </div>)
 }
+
+
+
+
 export default ViewPano;
