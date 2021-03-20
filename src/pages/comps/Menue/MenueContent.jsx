@@ -31,10 +31,10 @@ const MenueContent = () => {
     return(<div className="menue-content">
         <MenueItem text="Home" logo={<ImExit/>} onClick={() => history.push("/")}/>
         <MenueItem text="Back" logo={<HiOutlineArrowLeft/>} onClick={() => {
-            history.push("/pano" + back)
+            history.push("/Pano" + back)
             }}/>
         <MenueItem text="Next" logo={<HiOutlineArrowRight/>} onClick={() => {
-            history.push("/pano" + next)
+            history.push("/Pano" + next)
             console.log(next);
             }}/>
     </div>)

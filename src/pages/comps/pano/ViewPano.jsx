@@ -4,6 +4,7 @@ import React, { Suspense, useRef } from 'react'
 import { Canvas, extend, useFrame, useThree, useLoader } from 'react-three-fiber'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import PullupMenue from '../Menue/PullupMenue'
+import './ViewPano.css'
 
 
 const ViewPano = (props) => {
@@ -35,14 +36,14 @@ const ViewPano = (props) => {
 
 
     return (<div>
-        
-        <Canvas style={{height:"100vh",width:"100vw"}} camera={{ position: [0, 0, 0.1] }}>
+        <h1 style={{ position: "absolute" }}>loading...</h1>
+        <Canvas style={{ height: "100vh", width: "100vw" }} camera={{ position: [0, 0, 0.1] }}>
             <Controls enableZoom={false} enablePan={false} enableDamping dampingFactor={0.2} autoRotate rotateSpeed={-0.5} />
             <Suspense fallback={null}>
                 <Dome />
             </Suspense>
         </Canvas>
-        <PullupMenue/>
+        <PullupMenue />
     </div>)
 }
 

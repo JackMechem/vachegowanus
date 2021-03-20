@@ -4,6 +4,8 @@ import ImageOne from '../files/01num.png'
 import ImageTwo from '../files/02num.png'
 import ImageThree from '../files/03num.png'
 import { useHistory } from 'react-router-dom';
+import ButtonImage1 from '../files/svg-buttons/Section_place1-01.svg'
+import SectionOneButton from './comps/Buttons/SectionOneButton'
 
 
 const MainPage = () => {
@@ -17,11 +19,16 @@ const MainPage = () => {
 
     return (<div className="main">
 
-        
+
+
+
+        <SectionOneButton/>
         <div className="plan">
 
             <div style={Info} className="info">
-                
+
+
+
                 <input type="button" onMouseOver={() => {
                     setInfo({
                         backgroundImage: `url(${ImageTwo})`,
