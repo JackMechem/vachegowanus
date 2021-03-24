@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/JackMechem/panoplanview/static/css/main.c26b861d.chunk.css",
-    "main.js": "/JackMechem/panoplanview/static/js/main.47d8a670.chunk.js",
-    "main.js.map": "/JackMechem/panoplanview/static/js/main.47d8a670.chunk.js.map",
+    "main.js": "/JackMechem/panoplanview/static/js/main.af249a05.chunk.js",
+    "main.js.map": "/JackMechem/panoplanview/static/js/main.af249a05.chunk.js.map",
     "runtime-main.js": "/JackMechem/panoplanview/static/js/runtime-main.589cdf07.js",
     "runtime-main.js.map": "/JackMechem/panoplanview/static/js/runtime-main.589cdf07.js.map",
     "static/js/2.17a992b4.chunk.js": "/JackMechem/panoplanview/static/js/2.17a992b4.chunk.js",
@@ -19,13 +19,12 @@
     "static/media/Pano3.ffec473d.png": "/JackMechem/panoplanview/static/media/Pano3.ffec473d.png",
     "static/media/Pano4.eb8d6cdd.png": "/JackMechem/panoplanview/static/media/Pano4.eb8d6cdd.png",
     "static/media/Pano5.211727a3.jpg": "/JackMechem/panoplanview/static/media/Pano5.211727a3.jpg",
-    "static/media/Section_place1-01.fccd0b5d.svg": "/JackMechem/panoplanview/static/media/Section_place1-01.fccd0b5d.svg",
     "static/media/pages.css": "/JackMechem/panoplanview/static/media/plan_z-01.da934d71.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.589cdf07.js",
     "static/js/2.17a992b4.chunk.js",
     "static/css/main.c26b861d.chunk.css",
-    "static/js/main.47d8a670.chunk.js"
+    "static/js/main.af249a05.chunk.js"
   ]
 }
