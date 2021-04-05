@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import PageNotFound from './pages/PageNotFound.jsx';
-import StartScreen from './pages/StartScreen';
 import MainPage from './pages/MainPage';
 import Pano1 from './pages/panos/Pano1';
 import Pano2 from './pages/panos/Pano2';
