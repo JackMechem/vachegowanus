@@ -31,12 +31,10 @@
   
   .infoButton {
     position: absolute;
-    width: 70px;
-    height: 70px;
-    background-color: rgba(255, 0, 0, 0);
     cursor: pointer;
     outline: none;
     border: none;
+    opacity: 0;
   }
   .infoButton:active {
     outline: none;
@@ -54,6 +52,33 @@
     height: 100%;
     z-index: 100000;
   }
+
+  .start {
+    color: rgb(56, 56, 56);
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -100%);
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+  .loading {
+    font-size: 40px;
+    animation: App-logo-spin infinite 1s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+  
   
   
   

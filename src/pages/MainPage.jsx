@@ -1,24 +1,49 @@
-import React, { useState } from 'react';
-import './pages.css'
-import ImageOne from '../files/01num.png'
-import ImageTwo from '../files/02num.png'
-import ImageThree from '../files/03num.png'
+import React, { useState, useRef, useEffect, useImperativeHandle } from 'react';
+import './pages.css';
+import ImageOne from '../textures/svgs/redLettering_01.svg';
+import ImageTwo from '../textures/svgs/redLettering_02.svg';
+import ImageThree from '../textures/svgs/redLettering_03.svg';
 import { useHistory } from 'react-router-dom';
-import SectionOneButton from './comps/Buttons/SectionOneButton'
+import SectionOneButton from './comps/Buttons/SectionOneButton';
+import Button1 from '../textures/svgs/button1';
+import Button2 from '../textures/svgs/button2';
+import Button3 from '../textures/svgs/button3';
+import Buttons from '../textures/svgs/Buttons';
+import SectionView from './comps/SectionView/SectionView';
+import SectionOne from '../textures/sections/longsection_bite-01.jpg';
 
 
-const MainPage = () => {
+const MainPage = (props) => {
 
     let [Info, setInfo] = useState({});
+
+    const [sectionView, SetSectionView] = useState(false);
 
     const infoOpacity = .75;
 
     const history = useHistory();
 
+    //const secView = SectionView();
 
-    return (<div className="main">
+    //console.log(secView.props.imageVisible)
 
 
+    const imageCallback = (index) => {
+        console.log(index);
+        SetSectionView(index);
+    }
+
+    return (<div className="main">;
+
+
+
+      
+        <button style={{ opacity: 0, position: 'absolute', zIndex: 1000000, height: 50, width: 50, left: '15%', top: '49%' }} onClick={() => {
+            SetSectionView(sectionView => !sectionView);
+        }}></button>
+
+
+        {sectionView && <SectionView imageCallback={imageCallback} image={SectionOne} />}
 
 
         <div className="plan">
@@ -26,77 +51,53 @@ const MainPage = () => {
             <div style={Info} className="info">
 
 
-
-                <input type="button" onMouseOver={() => {
+                <Buttons onMouseOver1={() => {
                     setInfo({
-                        backgroundImage: `url(${ImageTwo})`,
+                        backgroundImage: `url(${ImageOne})`,
                         opacity: infoOpacity,
                     })
                 }}
-                    onMouseOut={() => {
+                    onMouseOut1={() => {
                         setInfo({
 
                         })
                     }}
-                    onClick={() => {
+                    onClick1={() => {
+                        history.push('/Pano1');
+                    }}
+                    onMouseOver2={() => {
+                        setInfo({
+                            backgroundImage: `url(${ImageTwo})`,
+                            opacity: infoOpacity,
+                        })
+                    }}
+                    onMouseOut2={() => {
+                        setInfo({
+
+                        })
+                    }}
+                    onClick2={() => {
                         history.push('/Pano2');
                     }}
-                    className="infoButton"
-                    style={{
-                        margin: "32% 34.5%"
-                    }}></input>
-
-                {/*END*/}
-
-                <input type="button"
-
-                    onMouseOver={() => {
+                    onMouseOver3={() => {
                         setInfo({
                             backgroundImage: `url(${ImageThree})`,
                             opacity: infoOpacity,
                         })
                     }}
-                    onMouseOut={() => {
+                    onMouseOut3={() => {
                         setInfo({
 
                         })
                     }}
-                    onClick={() => {
+                    onClick3={() => {
                         history.push('/Pano3');
                     }}
-                    className="infoButton"
-                    style={{
-                        margin: "29% 47.5%"
-                    }}></input>
-
-                {/*END*/}
-
-                <input type="button"
-
-                    onMouseOver={() => {
-                        setInfo({
-                            backgroundImage: `url(${ImageOne})`,
-                            opacity: infoOpacity,
-                        })
-                    }}
-                    onMouseOut={() => {
-                        setInfo({
-
-                        })
-                    }}
-                    onClick={() => {
-                        history.push('/Pano1');
-                    }}
-                    className="infoButton"
-                    style={{
-                        margin: "31.7% 59.5%"
-                    }}></input>
-
-                {/*END*/}
+                />
 
 
 
-                {/*END*/}
+
             </div>
 
         </div>
