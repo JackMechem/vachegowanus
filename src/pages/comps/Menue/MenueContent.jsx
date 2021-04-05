@@ -10,7 +10,7 @@ const MenueContent = () => {
     const location = useLocation().pathname;
     const lastLocation = parseInt(location[location.length - 1]);
 
-    const panoAmount = 3;
+    const panoAmount = 5;
 
     console.log(lastLocation)
 
