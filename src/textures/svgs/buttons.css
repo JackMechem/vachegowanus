@@ -1,39 +1,42 @@
 .button1 {
-    margin: 0;
-    position:fixed;
+    display: block;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Or, use the background shortcut. */
+    height: 100vh;
     width: 100vw;
-    background-size: 100vw;
+    position: absolute;
     top: 0;
-    left: 0; 
+    left: 0;
     right: 0;
     bottom: 0;
-    background-repeat: no-repeat;
-    transition-duration: .8s;
     opacity: 0;
 }
+
 .button2 {
     margin: 0;
-    position:fixed;
+    position: fixed;
     width: 100vw;
     background-size: 100vw;
     top: 0;
-    left: 0; 
+    left: 0;
     right: 0;
     bottom: 0;
     background-repeat: no-repeat;
     transition-duration: .8s;
     z-index: 1000000;
 }
+
 .button3 {
     margin: 0;
-    position:absolute;
+    position: absolute;
     width: 100vw;
     background-size: 100vw;
     top: 0;
-    left: 0; 
+    left: 0;
     right: 0;
     bottom: 0;
     background-repeat: no-repeat;
     transition-duration: .8s;
-
 }
