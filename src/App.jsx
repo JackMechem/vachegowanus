@@ -10,7 +10,7 @@ import Pano5 from './pages/panos/Pano5';
 import Pano6 from './pages/panos/Pano6';
 import Pano7 from './pages/panos/Pano7';
 import Pano8 from './pages/panos/Pano8';
-import ViewModel from './pages/comps/modelView/ViewModel'
+import ViewModel from './pages/comps/modelView/ViewModel';
 
 const App = () => {
 
