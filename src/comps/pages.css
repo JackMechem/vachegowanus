@@ -1,0 +1,114 @@
+.plan {
+  display: block;
+  background-image: url("../Textures_v1/bg-01.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Or, use the background shortcut. */
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.program {
+  display: block;
+  background-image: url("../Textures_v1/bg-02.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Or, use the background shortcut. */
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.space {
+  display: block;
+  background-image: url("../Textures_v1/bg-03.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Or, use the background shortcut. */
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.markers {
+  display: block;
+  background-image: url("../Textures_v1/pu_plansectionmarkers.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Or, use the background shortcut. */
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.info {
+  margin: 0;
+  position: fixed;
+  height: 100%;
+  background-size: contain;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 100;
+}
+
+.info:active {
+  outline: none;
+  border: none;
+}
+
+.infoButton {
+  position: absolute;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  opacity: 0;
+}
+
+.infoButton:active {
+  outline: none;
+  border: none;
+}
+
+.pano {
+  position: relative;
+  height: 100px;
+}
+
+.main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 100000;
+}
+
+.start {
+  color: rgb(56, 56, 56);
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -100%);
+}
+
+
