@@ -36,9 +36,12 @@ const ViewPano = (props) => {
 
 
     return (<div>
-        <h1 style={{ position: "absolute" }}>loading...</h1>
+        <div className="loading-section">
+            <h1 className="loading-text">loading</h1>
+            <h1 className="loading">I</h1>
+        </div>
         <Canvas style={{ height: "100vh", width: "100vw" }} camera={{ position: [0, 0, 0.1] }}>
-            <Controls enableZoom={false} enablePan={false} enableDamping dampingFactor={0.2} autoRotate rotateSpeed={-0.5} />
+            <Controls enableZoom={false} enablePan={false} enableDamping dampingFactor={0.2} autoRotate autoRotateSpeed={.5} rotateSpeed={-0.5} />
             <Suspense fallback={null}>
                 <Dome />
             </Suspense>

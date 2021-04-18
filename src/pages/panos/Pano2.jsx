@@ -1,6 +1,6 @@
 import React from 'react';
 import ViewPano from '../comps/pano/ViewPano'
-import Pano from '../../textures/sections/0002.png'
+import Pano from '../../Textures_v1/pano02.png';
 
 const Pano2 = () => {
     return(

@@ -4,11 +4,11 @@ import { AiOutlineCloseCircle } from 'react-icons/ai'
 import MainPage from '../../MainPage'
 
 
-const SectionView = ({image, imageCallback}) => {
+const SectionView = ({ image, ifra, imageCallback }) => {
 
     const [imageVisible, SetImageVisible] = useState(true);
 
-    
+
 
 
     return (<div>
@@ -19,10 +19,11 @@ const SectionView = ({image, imageCallback}) => {
                     <a onClick={() => {
                         SetImageVisible(false);
                         imageCallback(false);
-                    }}><AiOutlineCloseCircle /></a>
+                    }}><AiOutlineCloseCircle color="#ffffff" /></a>
                 </div>
 
-                <img src={image} className='sectionViewImage' />
+
+                {ifra ? <iframe src={ifra} className='sectionViewIframe' /> : <img src={image} className='sectionViewImage' />}
 
 
             </div>

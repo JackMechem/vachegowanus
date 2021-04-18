@@ -43,9 +43,6 @@
   bottom: 0;
 }
 
-.space {
-}
-
 .markers {
   display: block;
   background-image: url("../Textures_v1/pu_plansectionmarkers.png");
@@ -114,18 +111,4 @@
   transform: translate(-50%, -100%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .loading {
-    font-size: 40px;
-    animation: App-logo-spin infinite 1s linear;
-  }
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

@@ -1,5 +1,5 @@
 import React from 'react';
-import Pano from '../../textures/sections/0001.png';
+import Pano from '../../Textures_v1/pano01.png';
 import ViewPano from '../comps/pano/ViewPano';
 
 const Pano1 = () => {
