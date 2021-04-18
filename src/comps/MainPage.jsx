@@ -28,13 +28,14 @@ import ImageTwentyFour from '../Textures_v1/dw_b_04.jpg';
 
 import SectionOne from '../Textures_v1/Section-01.jpg';
 import SectionTwo from '../Textures_v1/Section-02.jpg';
-import SectionFour from '../Textures_v1/Section-04.jpg'
+import SectionThree from '../Textures_v1/Section-03.jpg';
+import SectionFour from '../Textures_v1/Section-04.jpg';
 
 import PlanOne from '../Textures_v1/dw_plan_01.jpg';
 import PlanTwo from '../Textures_v1/dw_plan_03.jpg';
 import PlanThree from '../Textures_v1/dw_plan_06.jpg';
 
-import SlidesOne from '../Textures_v1/viewslidesIcon.png'
+import SlidesOne from '../Textures_v1/sheetsicon_onpage.png'
 
 import { useHistory } from 'react-router-dom';
 import Buttons from './Buttons';
@@ -75,6 +76,7 @@ const MainPage = (props) => {
         SlidesOne,
         ImageTwentyThree,
         ImageTwentyFour,
+        SectionThree, // 31
     ]
     let Images = [];
     for(let i = 0; i <=images_.length; i++){
@@ -215,7 +217,7 @@ const MainPage = (props) => {
         {secNine && <SectionView imageCallback={imageCallbackNine} image={Images[24].src} />}
 
         {secTen && <SectionView imageCallback={imageCallbackTen} image={Images[23].src} />}
-        {secEleven && <SectionView imageCallback={imageCallbackEleven} image={Images[20].src} />}
+        {secEleven && <SectionView imageCallback={imageCallbackEleven} image={Images[31].src} />}
         {secTwelve && <SectionView imageCallback={imageCallbackTwelve} image={Images[27].src} />}
 
         {Presentation && <SectionView imageCallback={imageCallbackPresentaion} ifra="https://indd.adobe.com/view/dccfd86a-f4cb-4291-995f-a610a139d1d1" />}
@@ -226,6 +228,7 @@ const MainPage = (props) => {
 
 </div>
 
+            <div className="slides" >
             <div style={Info} className="info">
 
                 <Buttons 
@@ -436,7 +439,7 @@ const MainPage = (props) => {
 
 
             </div>
-
+</div>
         </div>
     </div>)
 }

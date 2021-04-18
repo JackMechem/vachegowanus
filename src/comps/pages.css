@@ -13,6 +13,21 @@
   bottom: 0;
 }
 
+.slides {
+  display: block;
+  background-image: url("../Textures_v1/sheetsicon_onpage.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Or, use the background shortcut. */
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 .program {
   display: block;
   background-image: url("../Textures_v1/bg-02.png");
