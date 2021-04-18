@@ -10,6 +10,10 @@
 
 This repository holds the tools nessasary to build vachegowanus for all platform supporting create-react-app. The goal for this project is to complete the task of presenting the images as efficiently as possible.
 
+##### Notes
+
+This project is filled with obsolete componets, I am aware of this and will clean up the project eventually.
+
 ## Install the prerequisites
 
 you will need `node.js`, `npm`, and `create-react-app` installed for this project to build properly.
