@@ -16,7 +16,7 @@ This project is filled with obsolete componets, I am aware of this and will clea
 
 ## Install the prerequisites
 
-you will need `node.js`, `npm`, and `create-react-app` installed for this project to build properly.
+You will need `node.js` and `npm` installed for this project to build properly.
 
 ## Clone and initialize the repo
 
